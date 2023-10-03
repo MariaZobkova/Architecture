@@ -50,26 +50,30 @@ public class main {
 
         for (int i = 0; i < 20; i++) {
             int index = rnd.nextInt(8);
-            System.out.println(index);
+
             if (index == 0){
                 countGold++;
+                index = rnd.nextInt(2,8);
+                prizeGenerator.get(index).OpenReward();
             }
-            if (index == 1){
+            else if (index == 1){
                 countGem++;
+                index = rnd.nextInt(2,8);
+                prizeGenerator.get(index).OpenReward();
             }
-            if (countGold == 11 || i == 11 || i == 12 || i == 13){
+            else if (countGold == 11 || i%11 == 0 && i!=0 || i%12 == 0 && i!=0|| i%13 == 0 && i!=0){
                 prizeGenerator.get(0).OpenReward();
                 countGold = 0;
             }
-            if (countGem ==  13 || i == 14) {
+            else if (countGem ==  13 || i%14 == 0 && i!=0 ) {
                 prizeGenerator.get(1).OpenReward();
                 countGem = 0;
             }
-            if (index != 1 && index != 0){
+            else if (index != 1 && index != 0){
                 prizeGenerator.get(index).OpenReward();
             }
 
 
+        }
     }
-}
 }
