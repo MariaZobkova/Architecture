@@ -1,4 +1,4 @@
-package InMemoryModel;
+package Sem1.InMemoryModel;
 
 // Интерфейс смены модели
 public interface IModelChanger {

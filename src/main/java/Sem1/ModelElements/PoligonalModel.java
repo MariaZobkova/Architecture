@@ -1,4 +1,4 @@
-package ModelElements;
+package Sem1.ModelElements;
 
 import java.util.ArrayList;
 import java.util.List;

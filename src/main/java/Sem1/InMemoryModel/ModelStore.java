@@ -1,5 +1,7 @@
-package InMemoryModel;
-import ModelElements.*;
+package Sem1.InMemoryModel;
+
+import Sem1.ModelElements.*;
+import Sem1.ModelElements.*;
 
 import java.util.ArrayList;
 import java.util.List;

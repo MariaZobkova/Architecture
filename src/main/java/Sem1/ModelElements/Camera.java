@@ -1,7 +1,7 @@
-package ModelElements;
+package Sem1.ModelElements;
 
-import Staff.Angle3D;
-import Staff.Point3D;
+import Sem1.Staff.Angle3D;
+import Sem1.Staff.Point3D;
 
 public class Camera {
     public Point3D location;
